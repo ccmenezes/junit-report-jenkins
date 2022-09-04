@@ -4,9 +4,9 @@
   "description": "How to create a jenkins pipeline with junit report",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "mocha": "node_modules/mocha/bin/mocha --reporter node_modules/mocha-junit-reporter --reporter-options jenkinsMode=1,outputs=1,mochaFile=results/mocha-test-results.xml",
-    "mocha-junit": ""
+    "test_fail": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
+    "mocha-junit": "node_modules/mocha/bin/mocha --reporter node_modules/mocha-junit-reporter --reporter-options jenkinsMode=1,outputs=1,mochaFile=results/mocha-test-results.xml"
   },
   "dependencies": {
     "chai": "^4.3.6",
