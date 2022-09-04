@@ -1,6 +1,11 @@
-node {
+pipeline {
+	agent any
+	options {
+		skipStagesAfterUnstable()
+	}
     stage ('Build') {
     	echo "Build"
+	sh "npm install node"
         sh "date"
     }
     stage ('Test') {
