@@ -1,7 +1,7 @@
 node {
     stage ('Build') {
     	echo "Build"
-        sh "make"
+        sh "date"
     }
     stage ('Test') {
 	echo "Test"
