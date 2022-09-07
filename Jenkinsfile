@@ -3,7 +3,7 @@ node {
     	echo "Build"
 	sh "date"
 	echo "apt install node"
-	echo "$GIT_BRANCH"
+	echo "$BRANCH_NAME"
 	sh "node -v"
     }
     stage ('Test') {
