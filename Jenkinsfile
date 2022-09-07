@@ -1,7 +1,7 @@
 node {
     stage ('Build') {
 	echo 'date'
-	sh '''node -v '''
+	sh 'echo "Fail!"; exit 1'
    }
     stage ('Test') {
 	echo "Test"
