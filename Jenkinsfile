@@ -1,7 +1,8 @@
 node {
     stage ('Build') {
-	echo 'date'
-	sh 'node -v'
+	echo "date"
+	PWD = sh(script: 'pwd', returnStdout: true)
+	echo "print name of current/working directory -> ${PWD}"
    }
     stage ('Test') {
 	echo "Test"
