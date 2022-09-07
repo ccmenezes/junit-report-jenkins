@@ -9,6 +9,7 @@ node {
 	echo "Test"
     }
     stage ('Deploy') {
-	echo "Deploy"
+	echo "Deployed"
+	echo $GIT_BRANCH
     }
 }
