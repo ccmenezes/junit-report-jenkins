@@ -7,6 +7,6 @@ node {
     }
     stage ('Deploy') {
 	echo "Deployed"
-	echo "$BRANCH_BRANCH"
+	echo "$BRANCH_NAME"
     }
 }
