@@ -2,7 +2,8 @@ node {
     stage ('Build') {
     	echo "Build"
 	sh "date"
-	sh "apt install node"
+	echo "apt install node"
+	echo $GIT_BRANCH
 	sh "node -v"
     }
     stage ('Test') {
