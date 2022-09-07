@@ -1,8 +1,6 @@
 node {
     stage ('Build') {
 	echo "date"
-	sh "node -v"
-	echo "$BRANCH_NAME"
    }
     stage ('Test') {
 	echo "Test"
