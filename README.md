@@ -1,19 +1,22 @@
 # junit-report-jenkins
 
 ## Description
-This project has a intent to run a Jenkins pipeline by script with a junit report.
 
+This project has a intent to run a Jenkins pipeline by script with a junit report.
 
 ## How to create a jenkins project
 
 ### Jenkins plugins
+
 * Pipeline
 * Blue Ocean
 
 ## Connecting Jenkins to Github
+
 On this step I'll create a connection between GitHub and Jenkins making possible to access the data from Github.
 
 ### GitHub
+
 1. Go to the right side on the top clicks on the Github user photo.
 2. Select the menu option Settings.
 3. On the left side go to the submenu Developer Settings.
@@ -24,8 +27,18 @@ On this step I'll create a connection between GitHub and Jenkins making possible
 8. Save it.
 9. Before leave the page copy the token in a safe place.
 
-_Note._ 
+_Note._
 |Once the token is created and the page is left is not possible to have access again, then you need to exclude the current one and create a new one.|
 ---|
 
 ### Jenkins
+
+## Docker
+
+### How to create an image from dockerfile
+`docker build . -t claudia/report:1.0`
+
+*docker build*  The docker command.
+*.* It means the current directory (I had build the image inside the Dockerfile folder).
+*-t * The parameter to inform the image owner.
+*claudia/report:1.0* The image name and tag.
